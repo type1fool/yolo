@@ -18,6 +18,8 @@ defmodule YoloWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    live "/form", DebounceLive
+    live "/pewpew", PewpewLive
   end
 
   # Other scopes may use custom stacks.

@@ -1,0 +1,7 @@
+<p>
+  After filling in a name, press <kbd>Enter</kbd> to test Phoenix's handling of latent debounces.
+</p>
+
+<.simple_form for={@form} phx-change="validate" phx-submit="pewpew">
+  <.input type="text" field={@form[:name]} label="Name" phx-debounce="blur" />
+</.simple_form>
