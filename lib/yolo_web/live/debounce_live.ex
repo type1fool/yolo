@@ -11,7 +11,7 @@ defmodule YoloWeb.DebounceLive do
   end
 
   def handle_event("validate", %{"yolo" => params}, socket) do
-    IO.inspect(params)
+    Logger.info(validate: params)
 
     {
       :noreply,
